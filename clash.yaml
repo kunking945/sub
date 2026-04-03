@@ -5,7 +5,7 @@ allow-lan: true
 proxies:
   - name: cad.v
     type: vmess
-    server: cad.vu2b.cloud
+    server: 149.248.60.220
     port: 44
     uuid: 896a5cdc-e6d5-46ea-b3d5-54bd361cbe4c
     alterId: 64
