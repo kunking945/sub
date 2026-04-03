@@ -5,18 +5,20 @@ allow-lan: true
 proxies:
   - name: cad.v
     type: vmess
-    server: 149.248.60.220
+    server: cad.vu2b.cloud
     port: 44
     uuid: 896a5cdc-e6d5-46ea-b3d5-54bd361cbe4c
     alterId: 64
     cipher: auto
     udp: true
     tls: true
+    servername: cad.vu2b.cloud
+    skip-cert-verify: true
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: ""
+        Host: cad.vu2b.cloud
 
 proxy-groups:
   - name: 🚀 节点选择
