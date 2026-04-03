@@ -1,5 +1,5 @@
 mixed-port: 7890
-mode: rule
+mode: global
 allow-lan: true
 
 proxies:
@@ -21,10 +21,10 @@ proxies:
         Host: cad.vu2b.cloud
 
 proxy-groups:
-  - name: 🚀 节点选择
+  - name: PROXY
     type: select
     proxies:
       - cad.v
 
 rules:
-  - MATCH,🚀 节点选择
+  - MATCH,PROXY
