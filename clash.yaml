@@ -1,0 +1,28 @@
+mixed-port: 7890
+mode: rule
+allow-lan: true
+
+proxies:
+  - name: cad.v
+    type: vmess
+    server: 149.248.60.220
+    port: 44
+    uuid: 896a5cdc-e6d5-46ea-b3d5-54bd361cbe4c
+    alterId: 64
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ""
+
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - cad.v
+
+rules:
+  - MATCH,🚀 节点选择
